@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+        <link href="css/layout.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="description" content="form">
+        <meta name="keywords" content="HTML, CSS, Form">
+        <meta name="author" content="Lamees Ali">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessability Form</title>
+    </head>
+    <body>
+        <header>
+   
+        <div class="header">
+
+        </div>
+        
+            <nav>
+                <div class="dropdown">
+                    <a href="index.html">Home</a>
+                </div><div class="dropdown">
+                    <a href="about.html">About</a>
+                    <div class="content">
+                        <a href="whatisud.html">What is UD</a>  
+                        <a href="thesevenprinciples.html">The 7 Principles</a>
+                        <a href="whyisudimportant.html">Why is UD Important</a>
+                    </div>
+                </div><div class="dropdown">
+                    <a href="research.html">Research</a>
+                    <div class="content">
+                        <a href="aboutvenue.html">About Venue</a>
+                        <a href="myassesments.html">My Assesments</a>
+                        <a href="featuresofvenue.html">Features of Venue</a>
+                        <a href="improvementandconclusion.html">Improvements &amp; Conclusion</a>
+                       
+                    </div>
+                </div><div class="dropdown">
+                    <a href="contact.html">Contact</a>
+                    <div class="content">
+                        <a href="forms.html">Form</a>
+
+                    </div>
+                </div><div class="dropdown">
+                    <a href="location.html">Location</a>
+                </div>
+            </nav>
+            <!------to get rid of the gaps in the nav bar I had to put the div next to each other----->
+           
+    </header>
+        
+        
+        
+    
+    
+     <form action="userdata.html" method="get" enctype="multipart/form-data">
+        
+        <h1>Accessability form</h1>
+ 
+<!-- details to login -->
+        <fieldset>
+            
+            <legend>Contact details</legend>            
+            <p class="instructions">Please enter your details below.</p>
+
+            <div class="divA">
+                <label for="firstname">First name: </label>
+                <input type="text" name="firstname" id="firstname" required>
+            </div>
+
+            <div class="divA">
+                <label for="lastname">Last name: </label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div>   
+            
+            <div class="divA">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </div> 
+            
+            <div class="divA">
+                <label for="tel">Phone: </label>
+                <input type="tel" name="tel" id="tel">
+            </div>        
+
+                 
+            
+        </fieldset>
+        
+<!-- about you questions -->
+        
+        <fieldset>
+            
+            <legend>Tell us a bit about you</legend>
+            
+            <p class="instructions">So we can assist you better</p> 
+            
+            
+            <div class="divA">
+                <label for="nationality">Nationality: </label>
+                <input type="text" name="nationality" id="nationality"  placeholder="If dual, enter both">
+            </div>   
+ 
+            
+            <div class="divA">
+                <label for="dob">Date of birth: </label>
+                <input type="date" name="dob" id="dob" >
+            </div>             
+            
+        </fieldset>
+    
+         <!-----Let us help you----->
+        
+        <fieldset>
+            
+            <legend>Let us help you</legend>
+             
+                        
+            <div class="checkboxes">
+                
+                <p class="instructions">Check the box/s if you have any of these disabilites </p>
+                
+                <div class="left">
+                    <div class="divB">
+                        <input type="checkbox" name="Hearing Impairment" id="HearingImpairment">  
+                        <label for="HearingImpairment">Hearing Impairment</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="Autism" id="Autism">
+                        <label for="Autism">Autism</label>
+                    </div>
+                    
+                </div>
+                
+                <div class="right">
+                    <div class="divB">
+                        <input type="checkbox" name="Visual Impairment" id="VisualImpairment">
+                        <label for="VisualImpairment">Visual Impairment</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="other" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            
+            
+        </fieldset>
+        
+
+        
+        <fieldset>
+            
+            <legend>If you have any other disabilites</legend>
+            
+            
+            <div class="divE">
+                <label for="text">Tell us so we can help you</label>
+                <textarea name="text" id="text" cols="50" rows="4" placeholder="Tell us what you need help with here!!!!"></textarea>
+                
+            </div>
+            
+
+                        
+        </fieldset>    
+
+<!-- start of buttons-->
+        
+        <fieldset>
+            
+            <div class="buttons">
+                <div class="leftbutton">
+                    <button type="submit" id="submit">Submit form</button>
+                </div>
+                
+                <div class="rightbutton">
+                    <button type="reset" id="reset">Reset form</button>
+                </div>
+                
+            </div>         
+            
+        </fieldset>
+        
+    </form>
+    
+    
+
+  
+
+     
+   <footer>A walk in their shoes Assignment by Lamees ali &copy; 2025</footer>
+    </body>
+</html>

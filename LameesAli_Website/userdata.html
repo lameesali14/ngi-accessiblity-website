@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/layout.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="description" content="form">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Lamees Ali">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Data</title>
+    </head>
+    <body>
+    
+    <div class="results">
+        <h1>You are regristered!</h1>
+        <p>
+            The information you submitted has been recieved, thank you. We will process your registration and send you
+            Twenty Easter Eggs by return
+        </p>
+
+        <h3>Your Submitted data:</h3>
+
+        <div id="userdata"></div>
+
+        <div id="userdata">
+            <p><a href="index.html">Return to Registration page</a></p>
+        </div>
+
+        <div id="userdata"></div>
+    </div>
+       
+        <script>
+            const dataList = document.getElementById("userdata");
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                dataList.append(`${name}: ${value}`);
+                dataList.append(document.createElement("br"));
+            });
+        </script>
+    </body>
+</html>
